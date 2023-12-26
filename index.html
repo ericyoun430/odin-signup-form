@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Test Form</title>
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+                <!-- leaf part -->
+            <aside class="left-side">
+                <img class = "img-background" src="assets/leaf-pics.webp">
+                <div class="side-container">
+                    <img class = "apple" src="assets/apple_logo.png">
+                    <h1>APPLE</h1>
+                </div>
+
+            </aside>
+
+            <!-- right side main -->
+            <div class="right-side">
+                <div class="upper-block">
+                    <ul>
+                        <p>This is not a real online service! You know you need something like this in your life 
+                            to help you realize your deepest dreams.<br>
+                            Sign up <span class="italic">now</span> to get started.</p>
+                        <p>You <span class="italic">know</span> you want to</p>
+                    </ul>
+
+                </div>
+                
+                <div class="middle-block">
+                    <form action="/test" method="post">
+                        <ul class="form-rows">
+                            <span class="call-to-action">
+                                Let's do this!
+                            </span>
+                            <li>
+                                <div class="form-element">
+                                    <label for="first_name">
+                                        <span class="form-label">FIRST NAME</span>
+                                    </label>
+                                    <input type="text" id="first_name" name="first_name" required>    
+                                </div>
+                                <div class="form-element">
+                                    <label for="last_name">
+                                        <span class="form-label">LAST NAME</span>
+                                    </label>
+                                    <input type="text" id="last_name" name="last_name" required>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-element">
+                                    <label for="email">
+                                        <span class="form-label">EMAIL</span>
+                                    </label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div class="form-element">
+                                    <label for="tel_num">
+                                        <span class="form-label">PHONE NUMBER</span>
+                                    </label>
+                                    <input type="tel" id="tel_num" name="tel_num" required>  
+                                </div>  
+                            </li>
+                            <li>
+                                <div class="form-element">
+                                    <label for="password">
+                                        <span class="form-label">PASSWORD</span>
+                                    </label>
+                                    <input type="password" id="password" name="password" required> 
+                                    <span class="invalid-password">* Passwords do not match</span>
+                                </div>
+                                <div class="form-element">
+                                    <label for="conf_password">
+                                        <span class="form-label">CONFIRM PASSWORD</span>
+                                    </label>
+                                    <input type="password" id="conf_password" name="conf_password" required>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                
+                <div>
+                    <ul>
+                        <button type="submit">Create Account</button>
+                        <p class="ask-login">Already have an account? <span class="login">Log in</span></p>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</head>
